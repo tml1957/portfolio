@@ -257,7 +257,7 @@ hr {
     grid-area: playground; 
     display: grid;
     grid-template-columns: 712px 50%;
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(5, 400px);
     margin: 43px 0px 48px 0px;
     justify-content: space-between;
     align-content: center;
