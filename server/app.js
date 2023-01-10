@@ -4,7 +4,6 @@ const compression = require('compression');
 const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 const expressHandlebars = require('express-handlebars');
 const helmet = require('helmet');
 const session = require('express-session');
@@ -15,14 +14,6 @@ const csrf = require('csurf');
 const router = require('./router.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
-
-const dbURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/Project2';
-mongoose.connect(dbURI, (err) => {
-  if (err) {
-    console.log('Could not connect to database. Skill issue.');
-    throw err;
-  }
-});
 
 const redisURL = process.env.REDISCLOUD_URL
   || 'redis://default:qy7pom8mS06jsy9URPcipRGY6eu6wJT0@redis-19266.c92.us-east-1-3.ec2.cloud.redislabs.com:19266';
