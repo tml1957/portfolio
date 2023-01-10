@@ -144,7 +144,7 @@ nav:nth-child(1) {
 }
 
 #aboutHeader {
-    width: 33%;
+    width: 50%;
     text-align: center;
     margin-top: 130px;
     height: 190px;
@@ -217,7 +217,7 @@ hr {
 }
 
 .pageHeader {
-    width: 33%;
+    width: 50%;
     margin: auto;
     text-align: center;
     margin-top: 130px;
