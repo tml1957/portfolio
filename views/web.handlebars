@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Tom's Portfolio</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&amp;family=Noto+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+</head>
+<body>
+  <nav><a href="/"><img id="logo" src="/assets/img/icon.png" alt="personal logo"/></a>
+      <div class="navlink"><a href="/about">About Me</a></div>
+      <div class="navlink"><a href="/games">Game Projects</a></div>
+      <div class="selectedNav"><a href="/web">Web Projects</a></div>
+    </nav>
+
+  <section class="pageHeader" class="centerAlign">
+    <h1>Web Projects</h1>
+  </section>
+
+  <div class="games">
+    <section id="subgrid3">
+      <div class="subimg">
+          <img src="/assets/img/pb.png" alt="Screencap from Pictoboards">
+      </div>
+      <div class="subtext">
+          <h1>Pictoboards</h1>
+          <h3>November 2022 - December 2022</h3><br>
+          <p>Pictoboards was a web app I made to recreate the feeling of Pictochat for the Nintendo DS on your computer. It's a front-end drawing based application using HTML canvas elements alongside a back-end server infrastructure. I wrote client javascript code using React and the server code was written in Node with Express. I also utilized Handlebars view engine to create template web pages for development. I wrote and retrieved information such as encrypted user account information to MongoDB using Mongoose.</p>
+          <p><a href="https://pictoboards.herokuapp.com/"class="viewLink">Visit Pictoboards</a></p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/icf.png" alt="Screenshot from BGE">
+      </div>
+      <div class="subtext">
+          <h1>Various ICF Projects</h1>
+          <h3>June 2022 - August 2022</h3><br>
+          <p>During my time at ICF, I had the pleasure of working on websites such as BGE, Pepco, Delmarva, and Washington Gas. The web development team at ICF was updating several websites created using Drupal 7 to the new Drupal 9 development tool. My primary responsibility was to recreate pages for each website. Using HTML and CSS I had to match the structure and style of the older versions of the websites. I also was charged with tracking Google Analytics data for several of the active ICF web projects.</p>
+          <p><a href="https://www.bge.com/Pages/default.aspx"class="viewLink">Visit BGE</a></p>
+        </div>
+      <div class="subimg">
+          <img src="/assets/img/lgm.png" alt="Screenshot of Little Guy Maker">
+      </div>
+      <div class="subtext">
+          <h1>Little Guy Maker</h1>
+          <h3>April 2022 - May 2022</h3><br>
+          <p>Developed in a team of two, Little Guy Maker was an application I worked on inspired by the charm of various character creators. Little Guy Maker was developed using HTML canvas elements and javascript. I stylized mobile-friendly page design with Bulma and loaded application data from an external JSON file. Web components were used to standardize HTML elements. The most enjoyable aspect of this project was figuring out the mathematics to dynamically draw each body part from a single point.</p>
+          <p><a href="https://people.rit.edu/tml1957/330/project-two/home.html"class="viewLink">Visit Little Guy Maker</a></p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

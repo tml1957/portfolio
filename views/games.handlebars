@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Tom's Portfolio</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&amp;family=Noto+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+</head>
+<body>
+  <nav><a href="/"><img id="logo" src="/assets/img/icon.png" alt="personal logo"/></a>
+      <div class="navlink"><a href="/about">About Me</a></div>
+      <div class="selectedNav"><a href="/games">Game Projects</a></div>
+      <div class="navlink"><a href="/web">Web Projects</a></div>
+    </nav>
+
+  <section class="pageHeader" class="centerAlign">
+    <h1>Digital Games</h1>
+  </section>
+
+  <div class="games">
+    <section id="subgrid">
+      <div class="subimg">
+          <img src="/assets/img/bhb.png" alt="Screenshot from Bullet Hell Basketball">
+      </div>
+      <div class="subtext">
+          <h1>Bullet Hell Basketball</h1>
+          <h3>January 2022 - May 2022</h3><br>
+          <p>If there is one game you must check out, it has to be this one. Developed in Unity, Bullet Hell Basketball is one the most polished projects I've had the pleasure of working on. Working in a group of 4, I was tasked with developing the Menu, Pause, and Graphics UI. The assets for most were created in Adobe Photoshop and then imported to Unity where scripting was added to provide proper function. Additionally, I lent a hand in the scripting needed for Player Movement and designed additional gamemodes such as the tutorial and Swipe Shot Rally.</p>
+          <p><a href="https://simmer.io/@nickybakes/bullet-hell-basketball"class="viewLink">Click Here to Play Bullet Hell Basketball</a></p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/stationary.png" alt="Screenshot from Stationary">
+      </div>
+      <div class="subtext">
+          <h1>Stationary</h1>
+          <h3>November 2021 - December 2021</h3><br>
+          <p>Created in Unity, Stationary is one of the more atmospheric games I've had the chance to work on. With only a month to develop, I was largely responsible for the production managment of this game. Stationary follows a security guard trapped in an endlees loop of rooms as a black mold slowly eats away at the world. I needed to find a way to design a moody experience to fit the gritty artwork and ominous story provided by my group members. All the while, I had to set weekly deadlines and schedule meetings to maintain a production timeline. I also scripted the object interactions to craft the puzzle required to escape the loop.</p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/onwardPrince.png" alt="Screenshot from Onward Wanderer!">
+      </div>
+      <div class="subtext">
+          <h1>Onward Wanderer!</h1>
+          <h3>May 2022</h3><br>
+          <p>One weekend in May 2022, I decided to finally decided to sit down and put my gathered knowledge of Unreal Engine 4 to the test. Onward Wanderer was a self-imposed challenge to develop a game to apply my knowledge of level design to the test. My main goal was to curate an open level environment with an emphasis on verticality and climbing with minimal explicit direction. I also had a high focus on making sure to properly pace out high energy combat sections with low energy exploration areas. Onwards and Upwards! Oh wait... That would have been a much better name for the gamein hindsight</p>
+        </div>
+      <div class="subimg">
+          <img src="/assets/img/shiftingTalismans.png" alt="Screenshot from Shifting Talismans">
+      </div>
+      <div class="subtext">
+          <h1>Shifting Talismans</h1>
+          <h3>October 2021</h3><br>
+          <p>Shifting Talismans is a relatively simple tile-matching game I developed with a small team in Unity. The object of the game is to drag rows and columns of colored blocks to get each block in it's correct position. My role in this project was to develop the art, assets, and animation for this project. It was an incredibly fun experience to draw and animate the countless demons that represented the time limit in each level.</p>
+        </div>
+      <div class="subimg">
+          <img src="/assets/img/haunting.png" alt="Screenshot from The Haunting of the Lone Cabin">
+      </div>
+      <div class="subtext">
+          <h1>The Haunting of the Lone Cabin</h1>
+          <h3>November 2020 - December 2020</h3><br>
+          <p>Why yes, I model too! Pictured to the left is a screenshot from my game The Haunting of the Lone Cabin. It's a simple world meant to serve as a gallery for a 3D Modeling and Animation course I took at RIT. The project was a group effort between me and a few of my peers, however I will specify that I modeled, textured, and imported to Unity all models that you can see within the screenshot. Prior to taking this course I had no experience with 3D animation, but after working in Maya and growing to understand how to model, UV unwrap, texture, rig, and animate I've grown really fond of the process!</p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/ctr.png" alt="Screenshot from Catch that Raccoon!">
+      </div>
+      <div class="subtext">
+          <h1>Catch that Raccoon!!</h1>
+          <h3>December 2020</h3><br>
+          <p>I have some experience with web design and development. This is thanks to some of the courses I have taken at RIT. In case I need to sell you on the premise for, "Catch that Raccoon," the game is like Pacman and Snake where you get to play as a Raccoon stealing trash bags. You have to narrowly avoid a crew of police officers. The game was built utilizing a prexisting template called DOM! Adventure. However, I will clarify that the AI movement, random world generation, gameplay elements, and asset work was devloped by myself using javascript.</p>
+          <p><a href="https://people.rit.edu/tml1957/235/project3/"class="viewLink">Click Here to Play Catch That Raccoon!!</a></p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/ct.png" alt="Screenshot from Crunch Time">
+      </div>
+      <div class="subtext">
+          <h1>Crunch Time</h1>
+          <h3>February 2020 - April 2020</h3><br>
+          <p>Crunch Time was my first venture into the Monogame framework for Visual Studio. Inspired by the time mechanics of Superhot, the game is a top down shooter where you have to clear waves of enemies in different rooms. However, the speed of both your bullets and the enemy's bullets are determined by how fast you're moving. Figuring out the math required to rotate and orient the player character as well as the speed modifications is still one of the most challenging project undertakings I have worked on! With my controls, my teammates would then develop levels using the level editor we also developed.</p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/walter.png" alt="Walter">
+      </div>
+      <div class="subtext">
+          <h1>Walter Dating Simulator</h1>
+          <h3>October 2019</h3><br>
+          <p>Aside from a few apps I had made in years prior, I consider the Walter Dating Simulator to be the first game I have ever made. It is simultaneously the best and the worst piece of media that I have ever created. I don't know how I made it. I don't want to know how I made it. I simply woke up in a cold sweat one morning with vague memories of making this application. Jokes aside, even though this game hasn't aged as well as my other projects, I still enjoy the humor I went for.</p>
+      </div>
+    </section>
+  </div>
+
+  <section class="pageHeader" class="centerAlign">
+    <h1>Analog Games</h1>
+  </section>
+
+  <div class="games">
+    <section id="subgrid2">
+      <div class="subimg">
+          <img src="/assets/img/coc.png" alt="Cover art of Caravan of Cards">
+      </div>
+      <div class="subtext">
+          <h1>Caravan of Cards</h1>
+          <h3>September 2021 - December 2021</h3><br>
+          <p>Caravan of Cards is an original Tabletop RPG I developed with a few friends for my Tabletop RPG Design class at RIT. The game revolves around a world and power system inspired the major arcana tarot cards. My responsibilities for this project was to find a way to design and balance mechanics that would allow GMS and players to craft enjoyable experiences. I also did a majority of the PDF formatting in Adobe InDesign</p>
+          <p><a href="https://people.rit.edu/xcg2903/portfolio/media/Caravan_of_Cards_wCover.pdf"class="viewLink">Click Here to View the Rulebook</a></p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/athame.png" alt="Box art of Athame">
+      </div>
+      <div class="subtext">
+          <h1>Athame</h1>
+          <h3>September 2021</h3><br>
+          <p>Developed using Tabletop Simulator, me and a team of three others developed a small card game using lore from the Athame series. The objectivbe of the game is to collect cards and build a ritual circle all while using other spells to sabotage other players. My primary role in this project was to come up with secondary card effects that would create engaging moments of sabotage and fun between players.</p>
+      </div>
+      <div class="subimg">
+          <img src="/assets/img/mj.png" alt="Screenshot from Mathematical Jousting">
+      </div>
+      <div class="subtext">
+          <h1>Mathematical Jousting</h1>
+          <h3>March 2021 - May 2021</h3><br>
+          <p>Mathematical Jousting is an educational board game I developed with three friends for my Game Design and Development class at RIT. Our primary objective was to create a simple game that you can play anywhere so long as you have a couple dice lying around. The game involves a lot of dice rolling and quick mental math. Despite its simplicity, it is probably one of the most intense games I've helped make as dice get to be thrown around the room and arguments will break out. My main goal with this project was to test and refine the experience to make sure it was as simple and fun as possible.</p>
+        </div>
+    </section>
+  </div>
+</body>
+</html>
