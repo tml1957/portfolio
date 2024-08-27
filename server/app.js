@@ -6,23 +6,11 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
 const helmet = require('helmet');
-const session = require('express-session');
-const RedisStore = require('connect-redis')(session);
-const redis = require('redis');
 const csrf = require('csurf');
 
 const router = require('./router.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
-
-const redisURL = process.env.REDISCLOUD_URL
-  || 'redis://default:qy7pom8mS06jsy9URPcipRGY6eu6wJT0@redis-19266.c92.us-east-1-3.ec2.cloud.redislabs.com:19266';
-
-const redisClient = redis.createClient({
-  legacyMode: true,
-  url: redisURL,
-});
-redisClient.connect().catch(console.error);
 
 const app = express();
 
@@ -35,19 +23,6 @@ app.use(favicon(`${__dirname}/../hosted/img/favicon.png`));
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.use(session({
-  key: 'sessionid',
-  store: new RedisStore({
-    client: redisClient,
-  }),
-  secret: 'Picto Arigato',
-  resave: true,
-  saveUninitialized: true,
-  cookie: {
-    httpOnly: true,
-  },
-}));
 
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: '' }));
 app.set('view engine', 'handlebars');
