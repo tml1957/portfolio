@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
 const helmet = require('helmet');
+const session = require('express-session');
 const csrf = require('csurf');
 
 const router = require('./router.js');
@@ -23,6 +24,13 @@ app.use(favicon(`${__dirname}/../hosted/img/favicon.png`));
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(session({
+  key: 'sessionid',
+  secret: 'Picto Arigato',
+  resave: false,
+  saveUninitialized: false,
+}));
 
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: '' }));
 app.set('view engine', 'handlebars');
