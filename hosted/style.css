@@ -147,8 +147,7 @@ nav:nth-child(1) {
     width: 50%;
     text-align: center;
     margin-top: 130px;
-    height: 190px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 #aboutHeader h1 {
@@ -162,13 +161,12 @@ nav:nth-child(1) {
     width: 50%;
     margin: auto;
     margin-top: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     display: flex;
 }
 
 #lefttext {
     padding: 28px 38px 27px 38px;
-    min-width: 440px;
     margin-right: 20px;
 }
 
