@@ -7,7 +7,8 @@ html, body {
 }
 
 body {
-    background: #3a4c70;
+    background: rgb(30,40,60);
+    background: linear-gradient(0deg, rgba(30,40,60,1) 0%, rgba(58,76,112,1) 35%, rgba(13,160,191,1) 100%);
     color: white;
     font-family: 'Krona One', sans-serif;
 }
@@ -91,6 +92,7 @@ nav:nth-child(1) {
     display: flex;
     color: white;
     font-size: 32px;
+    text-shadow: black 0px 5px 10px;
 }
 
 #welcome h1 {
@@ -106,7 +108,8 @@ nav:nth-child(1) {
 
 .landingNav {
     border-radius: 25px;
-    border: 10px solid white;
+    border: 10px solid #ffffff;
+    box-shadow: black 0px 5px 10px;
     text-align: center;
     height: 200px;
     width: 50%;
@@ -121,7 +124,8 @@ nav:nth-child(1) {
 .landingNavLink, .landingNavLink:link, .landingNavLink:visited, .landingNavLink:hover, .landingNavLink:active {
     transition: all 0.8s ease;
     color: white;
-    background-color: #3a4c70;
+    background-color: rgba(58,76,112,0);
+    text-shadow: black 0px 3px 8px;
     text-decoration: none;
     font-size: 20px;
 }
