@@ -83,7 +83,6 @@ nav:nth-child(1) {
 }
 
 #welcome {
-    text-align: center;
     margin-top: 14px;
     height: 220px;
     width: 33%;
@@ -97,6 +96,7 @@ nav:nth-child(1) {
 
 #welcome h1 {
     padding-top: 25px;
+    text-align: center;
 }
 
 #icon {
@@ -292,4 +292,46 @@ div.subtext {
     float: right;
     width: 300px;
     padding: 10px;
+}
+
+@media only screen and (max-width: 1532px) {
+    #icon {
+        display: none;
+    }
+
+    #welcome {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .landingNavLeft, .landingNavRight {
+        width: 26.5%;
+        height: auto;
+    }
+
+    .landingNav {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1185px) {
+    .landingNav {
+        width: 66%;
+        margin: 0 auto;
+    }
+
+    .landingNavLeft, .landingNavRight {
+        width: 20%;
+        height: auto;
+    }
+
+    .centerNav {
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .landingNavLeft, .landingNavRight {
+        display: none;
+    }
 }
