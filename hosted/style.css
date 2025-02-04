@@ -194,6 +194,10 @@ hr {
     justify-content: space-between;
 }
 
+hr.smallStack {
+    display: none;
+}
+
 .top {
     margin-top: 0;
 }
@@ -219,7 +223,7 @@ hr {
 }
 
 .pageHeader {
-    width: 50%;
+    width: 73.6%;
     margin: auto;
     text-align: center;
     margin-top: 130px;
@@ -294,6 +298,27 @@ div.subtext {
     padding: 10px;
 }
 
+@media only screen and (max-width: 1800px) {
+    #about {
+        width: 62%;
+    }
+
+    #triple {
+        column-gap: 50px;
+    }
+
+    .games {
+        margin: auto;
+        width: 80%;
+    }
+
+    .subimg img{
+        height: auto;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width: 1532px) {
     #icon {
         display: none;
@@ -312,6 +337,40 @@ div.subtext {
     .landingNav {
         height: auto;
     }
+
+    #about {
+        width: 80%;
+    }
+
+    #triple {
+        display: grid;
+        width: 50%;
+        margin: auto;
+    }
+
+    hr.smallStack {
+        display: block;
+    }
+
+    #subgrid, #subgrid2, #subgrid3 {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        row-gap: 1rem;
+    }
+
+    .subimg {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    div.subtext {
+        text-align: center;
+        padding: 8px 0px 0px 0px;
+        min-height: 388px;
+        min-width: 340px;
+        overflow: auto;
+    }
 }
 
 @media only screen and (max-width: 1185px) {
@@ -328,10 +387,23 @@ div.subtext {
     .centerNav {
         margin: 50px auto;
     }
+
+    #rightImage img {
+        display: none;
+    }
+
+    .subimg {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .landingNavLeft, .landingNavRight {
         display: none;
+    }
+
+    .games {
+        margin-top: 100px;
     }
 }
